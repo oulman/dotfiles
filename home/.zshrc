@@ -13,3 +13,5 @@ compinit
 
 # rdp foo.domain.com DOMAIN oulman
 alias rdp="xfreerdp /u:$3 /d:$2 /sound:sys:alsa /microphone:sys:alsa /h:1050 /w:1680 /drive:workstation,/home/oulman/rdpmap +clipboard /v:$1"
+
+alias resyncdotfiles="homesick pull dotfiles && homesick symlink dotfiles"
