@@ -5,10 +5,11 @@ SAVEHIST=1000
 setopt appendhistory
 unsetopt beep
 bindkey -e
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
+
 zstyle :compinstall filename '/home/oulman/.zshrc'
 
 autoload -Uz compinit
 compinit
-# End of lines added by compinstall
+
+# rdp foo.domain.com DOMAIN oulman
+alias rdp="xfreerdp /u:$3 /d:$2 /sound:sys:alsa /microphone:sys:alsa /h:1050 /w:1680 /drive:workstation,/home/oulman/rdpmap +clipboard /v:$1"
