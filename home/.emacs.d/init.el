@@ -1,6 +1,9 @@
 (menu-bar-mode -1)
 ;;(tool-bar-mode -1)
 
+(require 'ox-md)
+(require 'ox-latex)
+
 ;; backup files
 (setq backup-directory-alist `(("." . "~/.saves")))
 (setq backup-by-copying t)
